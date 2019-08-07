@@ -32,18 +32,22 @@ class AnimalTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "AnimalCell", for: indexPath) as? AnimalCell
         let animal = animals[indexPath.row]
-        cell?.animalCellDelegate = self
+//        cell?.animalCellDelegate = self
+        cell?.didTapNoise = {[weak self] animal in
+            let alert = self?.alertService.alert(mesage: animal.noise)
+            self?.present(alert!, animated: true, completion: nil)
+        }
         cell?.configureCell(animal: animal)
         return cell!
     }
 
 }
 
-extension AnimalTableViewController: AnimalCellDelegate  {
-    func didTapNoiceButton(for animal: Animal) {
-        let alert = alertService.alert(mesage: animal.noise)
-        present(alert, animated: true, completion: nil)
-    }
-    
-    
-}
+//extension AnimalTableViewController: AnimalCellDelegate  {
+//    func didTapNoiceButton(for animal: Animal) {
+//        let alert = alertService.alert(mesage: animal.noise)
+//        present(alert, animated: true, completion: nil)
+//    }
+//
+
+//}

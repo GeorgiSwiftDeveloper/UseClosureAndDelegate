@@ -9,28 +9,32 @@
 import UIKit
 
 
-protocol AnimalCellDelegate {
-    func didTapNoiceButton(for animal: Animal)
-    
-}
+//protocol AnimalCellDelegate {
+//    func didTapNoiceButton(for animal: Animal)
+//
+//}
 class AnimalCell: UITableViewCell {
 
     @IBOutlet weak var emojiLabel: UILabel!
     @IBOutlet weak var nameLabel: UILabel!
     
     
-    var animalCellDelegate: AnimalCellDelegate?
+//    var animalCellDelegate: AnimalCellDelegate?
     
-    var animal: Animal?
+    //Use Closure
+    var didTapNoise: ((Animal) -> Void)?
+    
+    var animalo: Animal?
     func configureCell(animal: Animal) {
-        self.animal = animal
+        self.animalo = animal
         emojiLabel.text = animal.emoji
         nameLabel.text = animal.name
     }
     
     @IBAction func didTapNoiseBtn(_ sender: Any) {
-        guard let unwerappedAnimal = animal else {return}
-        animalCellDelegate?.didTapNoiceButton(for: unwerappedAnimal)
+        guard let unwerappedAnimal = animalo else {return}
+        didTapNoise?(unwerappedAnimal)
+//        animalCellDelegate?.didTapNoiceButton(for: unwerappedAnimal)
     }
     
 }
