@@ -8,24 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		6A161C7622FB54DE00936385 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A161C7522FB54DE00936385 /* AppDelegate.swift */; };
-		6A161C7822FB54DE00936385 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A161C7722FB54DE00936385 /* ViewController.swift */; };
 		6A161C7B22FB54DE00936385 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A161C7922FB54DE00936385 /* Main.storyboard */; };
 		6A161C7D22FB54E100936385 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A161C7C22FB54E100936385 /* Assets.xcassets */; };
 		6A161C8022FB54E100936385 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A161C7E22FB54E100936385 /* LaunchScreen.storyboard */; };
 		6A161C8822FB55ED00936385 /* AnimalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A161C8722FB55ED00936385 /* AnimalCell.swift */; };
 		6A161C8A22FB56AB00936385 /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A161C8922FB56AB00936385 /* Animal.swift */; };
+		6A161C8C22FB5AD500936385 /* AnimalTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A161C8B22FB5AD500936385 /* AnimalTableViewController.swift */; };
+		6A161C8E22FB5B4400936385 /* AlertService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A161C8D22FB5B4400936385 /* AlertService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6A161C7222FB54DE00936385 /* UsingClouserAndDelegate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UsingClouserAndDelegate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A161C7522FB54DE00936385 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6A161C7722FB54DE00936385 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		6A161C7A22FB54DE00936385 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6A161C7C22FB54E100936385 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6A161C7F22FB54E100936385 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6A161C8122FB54E100936385 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6A161C8722FB55ED00936385 /* AnimalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalCell.swift; sourceTree = "<group>"; };
 		6A161C8922FB56AB00936385 /* Animal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
+		6A161C8B22FB5AD500936385 /* AnimalTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalTableViewController.swift; sourceTree = "<group>"; };
+		6A161C8D22FB5B4400936385 /* AlertService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,10 +61,11 @@
 			isa = PBXGroup;
 			children = (
 				6A161C7522FB54DE00936385 /* AppDelegate.swift */,
-				6A161C7722FB54DE00936385 /* ViewController.swift */,
+				6A161C8B22FB5AD500936385 /* AnimalTableViewController.swift */,
 				6A161C7922FB54DE00936385 /* Main.storyboard */,
 				6A161C8722FB55ED00936385 /* AnimalCell.swift */,
 				6A161C8922FB56AB00936385 /* Animal.swift */,
+				6A161C8D22FB5B4400936385 /* AlertService.swift */,
 				6A161C7C22FB54E100936385 /* Assets.xcassets */,
 				6A161C7E22FB54E100936385 /* LaunchScreen.storyboard */,
 				6A161C8122FB54E100936385 /* Info.plist */,
@@ -141,10 +144,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6A161C7822FB54DE00936385 /* ViewController.swift in Sources */,
 				6A161C8A22FB56AB00936385 /* Animal.swift in Sources */,
 				6A161C8822FB55ED00936385 /* AnimalCell.swift in Sources */,
 				6A161C7622FB54DE00936385 /* AppDelegate.swift in Sources */,
+				6A161C8C22FB5AD500936385 /* AnimalTableViewController.swift in Sources */,
+				6A161C8E22FB5B4400936385 /* AlertService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

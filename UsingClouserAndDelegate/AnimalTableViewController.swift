@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  AnimalTableViewController.swift
 //  UsingClouserAndDelegate
 //
 //  Created by Georgi Malkhasyan on 8/7/19.
@@ -8,13 +8,14 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class AnimalTableViewController: UITableViewController {
 
+    let alertService = AlertService()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        
     }
 
-
 }
-
