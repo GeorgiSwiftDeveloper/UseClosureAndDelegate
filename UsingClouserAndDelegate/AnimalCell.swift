@@ -14,6 +14,11 @@ class AnimalCell: UITableViewCell {
     @IBOutlet weak var nameLabel: UILabel!
     
     
+    func configureCell(animal: Animal) {
+        emojiLabel.text = animal.emoji
+        nameLabel.text = animal.name
+    }
+    
     @IBAction func didTapNoiseBtn(_ sender: Any) {
         
     }

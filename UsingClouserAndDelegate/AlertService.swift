@@ -14,5 +14,6 @@ class AlertService {
         let alert = UIAlertController(title: nil, message: mesage, preferredStyle: .actionSheet)
         let action = UIAlertAction(title: "Dissmisss", style: .cancel, handler: nil)
         alert.addAction(action)
+        return alert
     }
 }

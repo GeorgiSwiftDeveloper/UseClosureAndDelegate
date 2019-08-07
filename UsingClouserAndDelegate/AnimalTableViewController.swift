@@ -12,10 +12,29 @@ class AnimalTableViewController: UITableViewController {
 
     let alertService = AlertService()
     
+    
+    let animals: [Animal] = [.dog,.cat,.snake,.pig,.lion]
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         
+        
+    }
+    
+    
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return animals.count
+    }
+    
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "AnimalCell", for: indexPath) as? AnimalCell
+        let animal = animals[indexPath.row]
+        
+        cell?.configureCell(animal: animal)
+        return cell!
     }
 
 }
